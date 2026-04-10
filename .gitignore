@@ -39,3 +39,9 @@
 
 # debug information files
 *.dwo
+
+# clangd formatter instructions
+.clang-format
+
+# Executables
+bis
