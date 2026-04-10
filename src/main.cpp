@@ -1,9 +1,4 @@
-#include "sort.hpp"
 #include "search.hpp"
+#include "sort.hpp"
 
-int main() {
-    int searchResult = binary_search();
-    int sortResult = binary_insertion_sort();
-
-    return 0;
-}
+int main() { return 0; }
