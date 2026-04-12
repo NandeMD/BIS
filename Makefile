@@ -26,7 +26,7 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp | $(BUILD_DIR)
 clean:
 	rm -rf $(BUILD_DIR) $(TARGET)
 
-# I acknowledge the use of [ChatGPT](https://chat.openai.com/) in the creation of this Makefile.
+# I acknowledge the use of [Github Copilot](https://github.com/features/copilot) in the creation of this Makefile.
 # It helped me on Line 8 with finding `patsubst` function
 # And creation of the 23-24
 # And simplifying all of the mess i created in the first place in this file
