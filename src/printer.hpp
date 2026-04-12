@@ -1,9 +1,6 @@
 #define PRINTER
 
+#include <cstdint>
 #include <string>
 
-#ifndef CUSTOM_T
-#include "custom_types.hpp"
-#endif
-
-void print_arr(uint *arr, usize n, std::string name);
+void print_arr(int64_t *arr, uintptr_t n, std::string name);
