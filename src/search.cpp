@@ -11,18 +11,18 @@ usize b_src_on_array(uint *arr, usize n, uint element, usize upper_bound) {
         throw "Upper bound is out of bounds of the array.";
     }
 
-    while (left <= right) {
-        usize center = (left + right) / 2;
-
-        if (arr[center] > element) {
-            if (center == 0)
-                return 0;
-
-            right = center - 1;
+    while (left != right) {
+        auto mid = (left + right) / 2;
+        if (arr[mid] < element) {
+            left = mid + 1;
         } else {
-            left = center + 1;
+            right = mid;
         }
     }
 
-    return left;
+    if (element <= arr[left]) {
+        return left;
+    } else {
+        return left + 1;
+    }
 }
