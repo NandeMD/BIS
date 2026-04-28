@@ -45,3 +45,9 @@
 
 # Executables
 bis
+
+// Ignore animation artifacts
+anims/.venv
+anims/media
+*.pyc
+__pycache__
